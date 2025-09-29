@@ -23,12 +23,24 @@ function createMenu() {
             menuElement.style.background = "#d49650";
             menuElement.style.width = "800px";
             menuElement.style.height = "50px";
-            //menuElement.textContent = "MENU";
+
+            // Flexbox で中央揃え
+            menuElement.style.display = "flex";
+            menuElement.style.alignItems = "center";   // 縦中央
+            menuElement.style.justifyContent = "center"; // 横中央
+
             document.body.appendChild(menuElement);
 
-            // 後でボタン
+            // ボタン
             let laterButton = document.createElement("img");
             laterButton.src = chrome.runtime.getURL("assets/laterButton.png");
+            laterButton.style.height = "90px";
+            laterButton.style.cursor = "pointer";
+            laterButton.title = "後で";
+            laterButton.onclick = function() {
+                addLink(nowPage);
+                alert("後で見るリストに追加しました。");
+            }
             menuElement.appendChild(laterButton);
         //}
     }, 5000);

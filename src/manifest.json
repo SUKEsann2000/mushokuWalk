@@ -3,11 +3,11 @@
   "name": "mushokuWalk",
   "version": "1.0",
   "description": "無色透名祭を徘徊するのに役立つ拡張機能",
-  "permissions": [],
+  "permissions": ["storage"],
   "content_scripts": [
     {
       "matches": ["https://www.nicovideo.jp/watch/*"],
-      "js": ["index.js", "addLink.js"],
+      "js": ["index.js", "addLink.js", "checkLink.js"],
       "run_at": "document_idle"
     }
   ],
