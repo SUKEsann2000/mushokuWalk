@@ -25,8 +25,6 @@ function createMenu() {
             menuElement.style.height = "50px";
             //menuElement.textContent = "MENU";
             document.body.appendChild(menuElement);
-
-            
         //}
     }, 5000);
 }
