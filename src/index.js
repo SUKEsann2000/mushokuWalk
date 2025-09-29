@@ -25,6 +25,11 @@ function createMenu() {
             menuElement.style.height = "50px";
             //menuElement.textContent = "MENU";
             document.body.appendChild(menuElement);
+
+            // 後でボタン
+            let laterButton = document.createElement("img");
+            laterButton.src = chrome.runtime.getURL("assets/laterButton.png");
+            menuElement.appendChild(laterButton);
         //}
     }, 5000);
 }
