@@ -1,0 +1,40 @@
+#mushokuWalkMenu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 99999;
+    background-color: #282828;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px;
+    gap: 8px;
+    font-family: sans-serif;
+    min-width: 250px; /* 幅の最小値を設定 */
+}
+
+.mushoku-walk-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* アイコンとテキストの間隔 */
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+    font-size: 14px;
+}
+
+.mushoku-walk-button:hover {
+    background-color: #404040;
+}
+
+.mushoku-walk-button svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}

@@ -7,13 +7,14 @@
   "content_scripts": [
     {
       "matches": ["https://www.nicovideo.jp/watch/*"],
-      "js": ["index.js", "addLink.js", "checkLink.js"],
+      "css": ["styles/menu.css"],
+      "js": ["index.js", "addLink.js", "getLink.js", "goNext.js", "checkLinks/index.js"],
       "run_at": "document_idle"
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": ["assets/*"],
+      "resources": ["assets/*", "checkLinks.html", "styles/checkLinks.css"],
       "matches": ["<all_urls>"]
     }
   ]
